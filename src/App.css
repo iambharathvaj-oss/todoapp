@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body{
+  font-family: sans-serif;
+  background-image: url('../src/Khalon.png');
+  background-repeat: none;
+  background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: #F6f6f6;
+  min-height: 500px;
+  float: right;
+  border: 0px black solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: 500px;
+   /* These are the margins; comeback here to edit them*/
+  /*margin-right: 3em;
+  position: absolute;*/
+  margin-right: 5em;
+  margin-top: 6em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#to-do-form input{
+  background-color: #F6f6f6;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  margin: 3em;
+  margin-left: 9em;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* To hide the outline that appears on creating a new to-do*/
+#to-do-form input:focus, #to-do-form button:focus{
+  outline: none;
+}
+#to-do-form button{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  background-color: black;
   color: white;
+  font-size:15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+/*#geek, #geekclick{
+  position: absolute;
+  bottom: 12em;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+#geekclick{
+  right: 15em;
+  margin-bottom: 20px;
+}*/
